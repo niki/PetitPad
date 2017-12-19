@@ -15,7 +15,7 @@ using System.Diagnostics;
 
 namespace app
 {
-	public partial class FormMain : Form
+	public partial class Form1 : Form
 	{
 		//自分自身のAssemblyを取得
 		static System.Reflection.Assembly asm =
@@ -85,7 +85,7 @@ namespace app
 
 		
 
-		public FormMain() {
+		public Form1() {
 			InitializeComponent();
 
 #if false
@@ -180,7 +180,7 @@ namespace app
 		/*!
 		 * フォームロード
 		 */
-		private void FormMain_Load(object sender, EventArgs e) {
+		private void Form1_Load(object sender, EventArgs e) {
 			// バージョン設定
 			mnuVersion.Text = _AppVer;
 
@@ -425,7 +425,7 @@ namespace app
 		/*!
 		 * フォームクローズ
 		 */
-		private void FormMain_FormClosed(object sender, FormClosedEventArgs e) {
+		private void Form1_FormClosed(object sender, FormClosedEventArgs e) {
 			closeAction();
 		}
 
@@ -975,14 +975,14 @@ namespace app
 		/*
 		 * フォームがアクティブになった時に不透明にする
 		 */
-		private void FormMain_Activated(object sender, EventArgs e) {
+		private void Form1_Activated(object sender, EventArgs e) {
 			this.Opacity = 1.0;
 		}
 
 		/*
 		 * フォームが非アクティブになった時に不透明度を設定する
 		 */
-		private void FormMain_Deactivate(object sender, EventArgs e) {
+		private void Form1_Deactivate(object sender, EventArgs e) {
 			if (mnuDeactive20.Checked) {
 				this.Opacity = 0.2;
 			} else if (mnuDeactive40.Checked) {
@@ -1074,7 +1074,7 @@ namespace app
 			textBox1_KeyUp( sender, null );
 		}
 
-		private void FormMain_Paint(object sender, PaintEventArgs e) {
+		private void Form1_Paint(object sender, PaintEventArgs e) {
 #if false
 			// black brush for Alpha transparency
 			SolidBrush blackBrush = new SolidBrush(Color.Black);
@@ -1091,7 +1091,7 @@ namespace app
 #endif
 		}
 
-		private void FormMain_MouseMove(object sender, MouseEventArgs e) {
+		private void Form1_MouseMove(object sender, MouseEventArgs e) {
 			if ((e.Button & MouseButtons.Left) == MouseButtons.Left) {
 				// 吸着するサイズ
 				Size gap = new Size(16, 16);
@@ -1185,7 +1185,7 @@ namespace app
 			}
 		}
 
-		private void FormMain_MouseDown(object sender, MouseEventArgs e) {
+		private void Form1_MouseDown(object sender, MouseEventArgs e) {
 			if ((e.Button & MouseButtons.Left) == MouseButtons.Left) {
 				//位置を記憶する
 				_mousePoint = new Point(e.X, e.Y);

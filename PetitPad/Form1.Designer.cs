@@ -1,6 +1,6 @@
 ﻿namespace app
 {
-	partial class FormMain
+	partial class Form1
 	{
 		/// <summary>
 		/// 必要なデザイナー変数です。
@@ -29,7 +29,7 @@
 		private void InitializeComponent()
 		{
 			this.components = new System.ComponentModel.Container();
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
 			this.tabControl1 = new System.Windows.Forms.TabControl();
 			this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
 			this.mnuTabRename = new System.Windows.Forms.ToolStripMenuItem();
@@ -419,7 +419,7 @@
 			this.textBox1.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textBox1_KeyUp);
 			this.textBox1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.textBox1_MouseUp);
 			// 
-			// FormMain
+			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -430,15 +430,15 @@
 			this.Controls.Add(this.txtTabRename);
 			this.Font = new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
-			this.Name = "FormMain";
+			this.Name = "Form1";
 			this.ShowInTaskbar = false;
-			this.Activated += new System.EventHandler(this.FormMain_Activated);
-			this.Deactivate += new System.EventHandler(this.FormMain_Deactivate);
-			this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormMain_FormClosed);
-			this.Load += new System.EventHandler(this.FormMain_Load);
-			this.Paint += new System.Windows.Forms.PaintEventHandler(this.FormMain_Paint);
-			this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.FormMain_MouseDown);
-			this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.FormMain_MouseMove);
+			this.Activated += new System.EventHandler(this.Form1_Activated);
+			this.Deactivate += new System.EventHandler(this.Form1_Deactivate);
+			this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
+			this.Load += new System.EventHandler(this.Form1_Load);
+			this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form1_Paint);
+			this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);
+			this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseMove);
 			this.tabControl1.ResumeLayout(false);
 			this.contextMenuStrip1.ResumeLayout(false);
 			this.ResumeLayout(false);

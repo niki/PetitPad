@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual C# Express 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application.csproj", "{E57C6F1A-43CA-413B-8087-135024B67D53}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetitPad", "PetitPad\PetitPad.csproj", "{E57C6F1A-43CA-413B-8087-135024B67D53}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
